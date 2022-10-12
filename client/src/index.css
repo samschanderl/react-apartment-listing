@@ -26,6 +26,24 @@ code {
 
 /* Utilities */
 
+.btn {
+  display: block;
+  padding: 10px 20px;
+  margin: 15px;
+  border-radius: 0px;
+  border: none;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn:active {
+  transform: scale(0.99) translateY(1px)
+}
+
 .line {
   background: var(--brown);
   width: 50%;
@@ -37,6 +55,22 @@ code {
   font-style: italic;
 }
 
+.pills {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pill {
+  margin-right: 10px;
+  margin-bottom: 20px;
+  background: var(--secondary);
+  padding: 5px 15px;
+  border-radius: 20px;
+  white-space: none;
+}
+
 /* Animations */
-@keyframes gradientFlow {
+@keyframes zoomIn {
+  0% {transform: scale(1)}
+  100% {transform: scale(1.1)}
 }

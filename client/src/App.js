@@ -28,7 +28,7 @@ function App() {
           <Route path="/search">
             <SearchBar />
           </Route>
-          <Route path="/listing:id">
+          <Route path="/listings/:id">
             <Listing />
           </Route>
         </Switch>

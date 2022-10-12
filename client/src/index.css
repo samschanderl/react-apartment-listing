@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+
+:root {
+  --primary: #22223b;
+  --secondary: #4a4e69;
+  --tertiary: #9a8c98;
+  --brown: #c9ada7;
+  --light: #f2e9e4;
+  --gradient1: linear-gradient(90deg, rgba(154,140,152,1) 0%, rgba(201,173,167,1) 100%);
+  --gradient2: linear-gradient(270deg, rgba(154,140,152,1) 0%, rgba(201,173,167,1) 100%);
+}
+
+body {
+  margin: 0;
+  font-family: 'Railway', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Utilities */
+
+.line {
+  background: var(--brown);
+  width: 50%;
+  max-width: 150px;
+  height: 3px;
+}
+
+.italic {
+  font-style: italic;
+}
+
+/* Animations */
+@keyframes gradientFlow {
+}

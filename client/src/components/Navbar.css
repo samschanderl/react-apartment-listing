@@ -1,0 +1,41 @@
+.navbar {
+    background: var(--primary);
+    color: var(--light);
+    margin: 0 auto;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.navbar nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin: 0 25px;
+    align-items: center;
+    max-width: 1280px;
+}
+
+.navbar a {
+    color: var(--light);
+    text-decoration: none;
+}
+
+.navbar .brand {
+    margin-right: auto;
+}
+
+.navbar a:last-child {
+    border: 1px solid var(--light);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0px 25px;
+}
+
+.navbar a:last-child:hover {
+    cursor: pointer;
+    background: var(--light);
+    color: var(--primary);
+    transition: .2s ease-in;
+}

@@ -1,0 +1,54 @@
+{
+    "listings": [
+        {
+            "id": "1",
+            "img": "./images/seaview-1.jpg",
+            "title": "Beautiful seaview apartment",
+            "bedrooms": "4",
+            "description": "Enjoy every day hearing the calming waves of the ocean",
+            "extras": ["pool", "sauna", "wine cellar", "sunset terrace"],
+            "price": "$2.5 Mio USD",
+            "address": "Seaview 22, California"
+        },
+        {
+            "id": "2",
+            "img": "./images/tuscany-1.jpg",
+            "title": "Old villa in Tuscany",
+            "bedrooms": "6",
+            "description": "Immerse yourself into the true Italian experience.",
+            "extras": ["garden", "vineyard", "sauna", "pool", "horse ranch"],
+            "price": "$4.2 Mio USD",
+            "address": "Via di Trevo, Tuscany"
+        },
+        {
+            "id": "3",
+            "img": "./images/korea-1.jpg",
+            "title": "Luxury condo on the 50th floor",
+            "bedrooms": "3",
+            "description": "Feel the vibrance of the city while enjoying pure luxury.",
+            "extras": ["pool", "sauna", "elevator", "rooftop garden"],
+            "price": "$1.6 Mio USD",
+            "address": "Gangnam 71, Seoul, Korea"
+        },
+        {
+            "id": "4",
+            "img": "./images/miami-1.jpg",
+            "title": "Beautiful condo with seaview",
+            "bedrooms": "4",
+            "description": "Comfortable living right near the beach.",
+            "extras": ["seaview", "elevator", "swimming pool", "gym"],
+            "price": "$2.5 Mio USD",
+            "address": "Sunset Paradise 28, Miami, Florida"
+        },
+        {
+            "id": "5",
+            "img": "images/london-1.jpg",
+            "title": "London Townhouse",
+            "bedrooms": "5",
+            "description": "A classy home for upscale families, right in the heart of London.",
+            "extras": ["private garden", "gym", "cinema room", "private elevator"],
+            "price": "$2.5 Mio USD",
+            "address": "Bartleby Road 12, London, UK"
+        }
+    ]
+}

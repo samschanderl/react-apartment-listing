@@ -1,9 +1,12 @@
 import './Listing.css';
-import React from 'react';
+import React, { useState } from 'react';
 import { useParams } from 'react-router-dom'
 import { useFetch } from '../../hook/useFetch';
+import Modal from '../../components/Modal'
 
 export default function Listing() {
+  const [openModal, setOpenModal] = useState(false)
+
   const { id } = useParams();
   const dataUrl = 'http://localhost:3001/api';
   const { data, error, isPending } = useFetch(dataUrl);
@@ -36,6 +39,7 @@ export default function Listing() {
                 <button className="btn btn-light">Request Information</button>
               </div>
 
+            {openModal && <Modal title={listing.title}/>}
             </div>
           )
           }

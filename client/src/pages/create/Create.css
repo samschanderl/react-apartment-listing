@@ -21,14 +21,6 @@ form label, button {
     margin: 10px 30px;
 }
 
-form label.label-full {
-    flex: 1 0 80%;
-}
-
-form label.label-half {
-    flex: 1 0 40%;
-}
-
 form label .delete {
     color: var(--tertiary);
 }

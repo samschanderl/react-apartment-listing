@@ -1,1 +1,98 @@
-[{"id":"1","img":"./images/seaview-1.jpg","title":"Beautiful seaview apartment","bedrooms":"4","description":"Enjoy every day hearing the calming waves of the ocean","extras":["pool","sauna","wine cellar","sunset terrace"],"price":"$2.5 Mio USD","country":"Seaview 22, California","rareFind":true},{"id":"2","img":"./images/tuscany-1.jpg","title":"Old villa in Tuscany","bedrooms":"6","description":"Immerse yourself into the true Italian experience.","extras":["garden","vineyard","sauna","pool","horse ranch"],"price":"$4.2 Mio USD","country":"Via di Trevo, Tuscany","rareFind":true},{"id":"3","img":"./images/korea-1.jpg","title":"Luxury condo on the 50th floor","bedrooms":"3","description":"Feel the vibrance of the city while enjoying pure luxury.","extras":["pool","sauna","elevator","rooftop garden"],"price":"$1.6 Mio USD","country":"Gangnam 71, Seoul, Korea","rareFind":false},{"id":"4","img":"./images/miami-1.jpg","title":"Beautiful condo with seaview","bedrooms":"4","description":"Comfortable living right near the beach.","extras":["seaview","elevator","swimming pool","gym"],"price":"$2.5 Mio USD","country":"Sunset Paradise 28, Miami, Florida","rareFind":false},{"id":"5","img":"images/london-1.jpg","title":"London Townhouse","bedrooms":"5","description":"A classy home for upscale families, right in the heart of London.","extras":["private garden","gym","cinema room","private elevator"],"price":"$2.5 Mio USD","country":"Bartleby Road 12, London, UK","rareFind":true},{"img":"","title":"Villa","bedrooms":"5","description":"villa","extras":["pool"],"price":"$3.4 Mio USD","country":"","rareFind":""},{"id":11,"img":"","title":"Villa","bedrooms":"5","description":"villa","extras":["pool"],"price":"$3.4 Mio USD","country":"","rareFind":""},{"id":7,"img":{"img":"blob:http://localhost:3000/c9282cc7-9786-43cf-84e9-123845c81b93"},"title":"Test","bedrooms":"4","description":"test","extras":["test"],"price":"$2.4 Mio USD","country":"","rareFind":"true"},{"id":7,"img":{"img":"blob:http://localhost:3000/c9282cc7-9786-43cf-84e9-123845c81b93"},"title":"Test","bedrooms":"4","description":"test","extras":["test"],"price":"$2.4 Mio USD","country":"","rareFind":"true"},{"id":8,"img":{"img":"blob:http://localhost:3000/c9282cc7-9786-43cf-84e9-123845c81b93"},"title":"Test","bedrooms":"4","description":"test","extras":["test"],"price":"$2.4 Mio USD","country":"","rareFind":"true"},{"id":8,"img":{"img":"blob:http://localhost:3000/c9282cc7-9786-43cf-84e9-123845c81b93"},"title":"Test","bedrooms":"4","description":"test","extras":["test"],"price":"$2.4 Mio USD","country":"","rareFind":"true"},{"id":8,"img":{"img":"blob:http://localhost:3000/c9282cc7-9786-43cf-84e9-123845c81b93"},"title":"Test","bedrooms":"4","description":"test","extras":["test"],"price":"$2.4 Mio USD","country":"","rareFind":"true"},{"id":11,"img":{"img":"blob:http://localhost:3000/c9282cc7-9786-43cf-84e9-123845c81b93"},"title":"Test","bedrooms":"4","description":"test","extras":["test"],"price":"$2.4 Mio USD","country":"","rareFind":"true"},{"id":13,"img":"/images/seaview-1.jpg","title":"test","bedrooms":"4","description":"test","extras":["test"],"price":"$2.4 Mio USD","country":"","rareFind":""},{"id":13,"img":"/images/JOIN IRIS SCIENCE 3.0.jpg","title":"test","bedrooms":"4","description":"test","extras":["test"],"price":"$2.4 Mio USD","country":"","rareFind":""},{"id":13,"img":"/images/JOIN IRIS SCIENCE 3.0.jpg","title":"test","bedrooms":"4","description":"test","extras":["test"],"price":"$2.4 Mio USD","country":"","rareFind":""},{"id":15,"img":"/images/JOIN IRIS SCIENCE 3.0.jpg","title":"test","bedrooms":"4","description":"test","extras":["test"],"price":"$2.4 Mio USD","country":"","rareFind":""}]
+[
+    {
+        "id": "1",
+        "img": "./images/seaview-1.jpg",
+        "title": "Beautiful seaview apartment",
+        "bedrooms": "4",
+        "description": "Enjoy every day hearing the calming waves of the ocean",
+        "extras": [
+            "pool",
+            "sauna",
+            "wine cellar",
+            "sunset terrace"
+        ],
+        "price": "$2.5 Mio USD",
+        "country": "Seaview 22, California",
+        "rareFind": true
+    },
+    {
+        "id": "2",
+        "img": "./images/tuscany-1.jpg",
+        "title": "Old villa in Tuscany",
+        "bedrooms": "6",
+        "description": "Immerse yourself into the true Italian experience.",
+        "extras": [
+            "garden",
+            "vineyard",
+            "sauna",
+            "pool",
+            "horse ranch"
+        ],
+        "price": "$4.2 Mio USD",
+        "country": "Via di Trevo, Tuscany",
+        "rareFind": true
+    },
+    {
+        "id": "3",
+        "img": "./images/korea-1.jpg",
+        "title": "Luxury condo on the 50th floor",
+        "bedrooms": "3",
+        "description": "Feel the vibrance of the city while enjoying pure luxury.",
+        "extras": [
+            "pool",
+            "sauna",
+            "elevator",
+            "rooftop garden"
+        ],
+        "price": "$1.6 Mio USD",
+        "country": "Gangnam 71, Seoul, Korea",
+        "rareFind": false
+    },
+    {
+        "id": "4",
+        "img": "./images/miami-1.jpg",
+        "title": "Beautiful condo with seaview",
+        "bedrooms": "4",
+        "description": "Comfortable living right near the beach.",
+        "extras": [
+            "seaview",
+            "elevator",
+            "swimming pool",
+            "gym"
+        ],
+        "price": "$2.5 Mio USD",
+        "country": "Sunset Paradise 28, Miami, Florida",
+        "rareFind": false
+    },
+    {
+        "id": "5",
+        "img": "images/london-1.jpg",
+        "title": "London Townhouse",
+        "bedrooms": "5",
+        "description": "A classy home for upscale families, right in the heart of London.",
+        "extras": [
+            "private garden",
+            "gym",
+            "cinema room",
+            "private elevator"
+        ],
+        "price": "$2.5 Mio USD",
+        "country": "Bartleby Road 12, London, UK",
+        "rareFind": true
+    },
+    {
+        "id": 42,
+        "img": "./images/korea-2.jpg",
+        "title": "house",
+        "bedrooms": "10",
+        "description": "check out this place",
+        "extras": [
+            "bedroom",
+            "cellar",
+            "tv"
+        ],
+        "price": "$2.4 Mio USD",
+        "country": "",
+        "rareFind": ""
+    }
+]

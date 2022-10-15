@@ -95,6 +95,15 @@ code {
   white-space: none;
 }
 
+/* Flex Layout */
+.flex-full {
+  flex: 1 0 80%
+}
+
+.flex-half {
+  flex: 1 0 40%
+}
+
 /* Animations */
 @keyframes zoomIn {
   0% {transform: scale(1)}

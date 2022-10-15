@@ -9,6 +9,7 @@ import './Create.css';
 function Create() {
   const [title, setTitle] = useState('');
   const [img, setImg] = useState('');
+  const [imgPath, setImgPath] = useState('');
   const [description, setDescription] = useState('');
   const [bedrooms, setBedrooms] = useState('');
   const [rareFind, setRareFind] = useState('');
@@ -16,19 +17,31 @@ function Create() {
   const [country, setCountry] = useState('');
   const [extrasInput, setExtrasInput] = useState('')
   const [extras, setExtras] = useState([]);
-  const [formSubmitted, setFormSubmitted] = useState('')
+  const [showMessage, setShowMessage] = useState(false)
 
   const { data } = useFetch('http://localhost:3001/api')
   const { postData } = useFetch('http://localhost:3001/api', 'POST')
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    // upload the image to the server
+    console.log('Uploading image...')
+    let formData = new FormData();
+    formData.append('img', img);
+    const response = fetch('http://localhost:3001/upload', {
+      method: 'POST',
+      body: formData
+    }).then(res => res.json()).then(resBody => {
+      console.log(resBody)
+    })  
+    console.log('Image uploaded...')
 
+    // uploading all json data to the local database
     if ( title) {
-      setFormSubmitted(true);
+      console.log('Submitting json data...')
       const newListing = {
         id: data.length,
-        img,
+        img: imgPath,
         title, 
         bedrooms,
         description, 
@@ -41,17 +54,18 @@ function Create() {
       console.log(newListing)
     }
     else {
-      setFormSubmitted(false);
     }
-    
   };
 
   const handleImage = (e) => {
     console.log(e.target.files[0])
     let uploadImg = e.target.files[0];
-    setImg(
-      new URL.createObjectURL(uploadImg))
-      // `${process.env.PUBLIC_URL}/images/${uploadImg.name}`
+    setImg(uploadImg)
+    const imgName = img.name.toLowerCase().replaceAll(" ", "-");
+    const imgPath = `./images/${imgName}`
+    setImgPath(imgPath)
+    console.log(imgPath)
+    console.log(img.name.toLowerCase().replaceAll(" ", "-"))
   }
 
   const onKeyDown = (e) => {
@@ -80,10 +94,10 @@ function Create() {
 
   return (
     <div className="create">
-      <form>
+      <form method="POST" encType="multipart/form-data">
         <h2>Add a new listing</h2>
 
-        <label className="label-full">
+        <label className="flex-full">
           <span>Listing Title</span>
           <input 
             type="text" 
@@ -93,19 +107,19 @@ function Create() {
             required/>
         </label>
 
-        <label className="label-full">
+        <label className="flex-full">
           <span>Upload an image</span>
           <input 
             type="file"
+            name="img"
             id="image-file" 
-            placeholder='Upload an image'
             onChange={handleImage} 
             accept=".jpg,.png"
             required
             />
         </label>
 
-        <label className="label-full">
+        <label className="flex-full">
           <span>Short description</span>
           <textarea 
             type="text" 
@@ -115,7 +129,7 @@ function Create() {
             required/>
         </label>
 
-        <label className="label-full">
+        <label className="flex-full">
           <span>Extras</span>
           <input 
             type="text" 
@@ -133,7 +147,7 @@ function Create() {
             </div>
         </label>
 
-        <label className="label-half">
+        <label className="flex-half">
           <span>Number of Bedrooms</span>
           <input 
             type="number" 
@@ -142,7 +156,7 @@ function Create() {
             required/>
         </label>
 
-        <label className="label-half">
+        <label className="flex-half">
           <span>Rare Find</span>
           <select 
             value={rareFind}
@@ -155,7 +169,7 @@ function Create() {
           </select>
         </label>
 
-        <label className="label-half">
+        <label className="flex-half">
           <span>Country</span>
           <input 
             list="countries" 
@@ -178,7 +192,7 @@ function Create() {
           </datalist>
         </label>
 
-        <label className="label-half">
+        <label className="flex-half">
           <span>Price</span>
           <input 
             type="number" 
@@ -188,7 +202,7 @@ function Create() {
             required/>
         </label>
 
-        {!formSubmitted ? <p className='italic'>Please fill our the complete form</p>:''}
+        {showMessage ? <p className='italic'>Please fill our the complete form</p>:''}
         <button className="btn btn-brown bold" onClick={handleSubmit}>Submit</button>
 
       </form>

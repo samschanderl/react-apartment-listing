@@ -3,14 +3,14 @@ import React from 'react';
 // styles
 import './Modal.css'
 
-export default function Modal(props) {
+export default function Modal({ title, closeModal}) {
   return (
     <div className="modal-wrapper">
         <div className="modal-box">
 
             <form>
-                <h2 className="flex-full">Request information about: </h2>
-                <h3 className="italic flex-full">{props.title}</h3>
+                <h3 className="flex-full">Request information about: </h3>
+                <h2 className="italic flex-full">{title}</h2>
                 <label className="flex-half">
                     Your Name:
                     <input
@@ -34,7 +34,7 @@ export default function Modal(props) {
                     ></textarea>
                 </label>
 
-                <button className="btn btn-light">Submit</button>
+                <button className="btn btn-light" onClick={closeModal}>Submit</button>
             </form>
         </div>
     </div>

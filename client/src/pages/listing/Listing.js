@@ -5,11 +5,15 @@ import { useFetch } from '../../hook/useFetch';
 import Modal from '../../components/Modal'
 
 export default function Listing() {
-  const [openModal, setOpenModal] = useState(false)
+  const [openModal, setOpenModal] = useState(true);
 
   const { id } = useParams();
   const dataUrl = 'http://localhost:3001/api';
   const { data, error, isPending } = useFetch(dataUrl);
+
+  const closeModal = () => {
+    setOpenModal(false);
+  }
 
   return (
     <div className="container">
@@ -36,10 +40,10 @@ export default function Listing() {
                     <span className="pill">{extra}</span>
                   ))}
                 </div>
-                <button className="btn btn-light">Request Information</button>
+                <button className="btn btn-light" onClick={ e => setOpenModal(true)}>Request Information</button>
               </div>
 
-            {openModal && <Modal title={listing.title}/>}
+            {openModal && <Modal title={listing.title} closeModal={closeModal}/>}
             </div>
           )
           }

@@ -24,6 +24,7 @@ function Create() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    
     // upload the image to the server
     console.log('Uploading image...')
     let formData = new FormData();

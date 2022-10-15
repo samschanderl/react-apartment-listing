@@ -1,5 +1,5 @@
 .modal-wrapper {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
@@ -8,6 +8,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .modal-box {
@@ -18,4 +19,13 @@
 .modal-box form {
     display: flex;
     flex-direction: row;
+    padding: 25px;
+}
+
+.modal-box form h2, h3 {
+    text-align: center;
+}
+
+.modal-box form h2 {
+    margin-bottom: 40px;
 }

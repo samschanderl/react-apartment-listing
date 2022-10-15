@@ -79,20 +79,5 @@
         "price": "$2.5 Mio USD",
         "country": "Bartleby Road 12, London, UK",
         "rareFind": true
-    },
-    {
-        "id": 42,
-        "img": "./images/korea-2.jpg",
-        "title": "house",
-        "bedrooms": "10",
-        "description": "check out this place",
-        "extras": [
-            "bedroom",
-            "cellar",
-            "tv"
-        ],
-        "price": "$2.4 Mio USD",
-        "country": "",
-        "rareFind": ""
     }
 ]

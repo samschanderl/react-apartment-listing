@@ -1,7 +1,7 @@
 const fs = require('fs');
 const express = require('express');
 const cors = require('cors');
-const data = require(`../data/db.json`);
+const data = require(`./data/db.json`);
 const multer = require('multer');
 const path = require('path');
 const e = require('cors');
@@ -25,8 +25,13 @@ const upload = multer({storage: storage})
 
 app.use(cors({credentials: true, origin: true}));
 app.use(express.json());
+app.use(express.static(path.join(__dirname, "./client")))
 
 //routing
+app.get("/", (req, res) => {
+    res.send("Hello there")
+})
+
 app.get("/api", (req, res) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.json(data)

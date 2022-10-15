@@ -32,8 +32,7 @@ code {
   margin: 15px;
   border-radius: 0px;
   border: none;
-  font-size: 14px;
-  border-radius: 5px;
+  font-size: 16px;
 }
 
 .btn:hover {
@@ -44,25 +43,52 @@ code {
   transform: scale(0.99) translateY(1px)
 }
 
+.btn-light {
+  background: var(--light);
+  color: var(--primary);
+}
+
+.btn-light:hover {
+  background: var(--tertiary);
+  color: var(--light);
+  cursor: pointer;
+}
+
+.btn-brown {
+  background: var(--tertiary);
+  color: white;
+}
+
+.btn-brown:hover {
+  background: var(--gradient1);
+  cursor: pointer;
+}
+
 .line {
   background: var(--brown);
   width: 50%;
   max-width: 150px;
   height: 3px;
+  margin-bottom: 15px;
 }
 
 .italic {
   font-style: italic;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 .pills {
   display: flex;
   flex-wrap: wrap;
+  margin: 10px 0;
 }
 
 .pill {
   margin-right: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   background: var(--secondary);
   padding: 5px 15px;
   border-radius: 20px;

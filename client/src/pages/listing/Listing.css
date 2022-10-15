@@ -4,11 +4,11 @@
 
 .single-listing {
     display: grid;
-    width: 80%;
+    width: 75%;
     max-width: 1000px;
     margin: 25px auto;
     padding: 0;
-    box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 10px 40px 0px rgba(0,0,0,0.5);
 }
 
 .banner {
@@ -33,5 +33,22 @@
     background: var(--primary);
     color: var(--light);
     margin: 0;
-    padding: 25px;
+    padding: 30px 25px;
+    position: relative;
 }
+
+.listing-info h1 {
+    margin: 30px 0;
+}
+
+.rare-find {
+    position: absolute;
+    top: 0;
+    transform: translateY(-25px);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    width: 102%;
+    background: var(--gradient1);
+    clip-path: polygon(2% 2%, 100% 2%, 98% 98%, 0% 98%);
+}   

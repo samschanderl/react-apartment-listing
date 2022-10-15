@@ -11,12 +11,10 @@ export default function Listing({listing}) {
 
   const openListing = (listingId) => {
     history.push(`/listings/${listingId}`)
-    // window.location.href=`/listings/${listingId}`
   }
 
   return (
     <div className="listing-wrapper" onClick={() => {openListing(listing.id)}}>
-      {/* <Link to={`/listings/${listing.id}`}> */}
       <p className="pricing-tag">{listing.price}</p>
       <div className="filters">
       <div className="listing-card">
@@ -35,7 +33,6 @@ export default function Listing({listing}) {
         </div>
       </div>
       </div>
-      {/* </Link> */}
     </div>
 
 

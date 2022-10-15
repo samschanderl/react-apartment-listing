@@ -13,7 +13,7 @@ export default function Home() {
       <h1>Find Your Perfect Home</h1>
       {error && <p className="error">{error}</p>}
       {isPending && <p className="loading">Loading...</p>}
-      {data && data.listings.map(listing => (
+      {data && data.map(listing => (
         <Listing key={listing.id} listing={listing}/>
       ))}
     </div>

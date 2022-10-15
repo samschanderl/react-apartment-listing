@@ -12,7 +12,7 @@ export default function Listing() {
     <div className="container">
       {error && <p className="error">{error}</p>}
       {isPending && <p className="is-pending">Loading...</p>}
-      {data && data.listings.map((listing) => {
+      {data && data.map((listing) => {
         if (listing.id === id) {
           return (
             <div key={listing.id} className="single-listing">
@@ -20,9 +20,14 @@ export default function Listing() {
                 <img src={process.env.PUBLIC_URL + `/${listing.img}`} alt="" className="banner-image" />
               </figure>
               <div className="listing-info">
-                <h2>{listing.title}</h2>
+                {listing.rareFind &&  <p className="rare-find italic">Rare find!</p>}
+  
+                
+                <h1>{listing.title}</h1>
                 <div className="line"></div>
                 <p>{listing.description}</p>
+                <h3>Extras</h3>
+                <div className="line"></div>
                 <div className="pills">
                   {listing.extras.map(extra => (
                     <span className="pill">{extra}</span>

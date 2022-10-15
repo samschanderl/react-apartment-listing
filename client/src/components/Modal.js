@@ -9,6 +9,7 @@ export default function Modal({ title, closeModal}) {
         <div className="modal-box">
 
             <form>
+                <a className="closeModalBtn" onClick={closeModal}>x</a>
                 <h3 className="flex-full">Request information about: </h3>
                 <h2 className="italic flex-full">{title}</h2>
                 <label className="flex-half">

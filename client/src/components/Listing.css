@@ -105,8 +105,6 @@
     padding: 25px;
     background: var(--primary);
     color: var(--light);
-    padding: auto;
-    white-space: none;
 }
 
 @media all and (max-width: 1200px) {

@@ -5,10 +5,10 @@ import { useFetch } from '../../hook/useFetch';
 import Modal from '../../components/Modal'
 
 export default function Listing() {
-  const [openModal, setOpenModal] = useState(true);
+  const [openModal, setOpenModal] = useState(false);
 
   const { id } = useParams();
-  const dataUrl = 'http://localhost:3001/api';
+  const dataUrl = 'https://react-apartment-listing.herokuapp.com/api';
   const { data, error, isPending } = useFetch(dataUrl);
 
   const closeModal = () => {

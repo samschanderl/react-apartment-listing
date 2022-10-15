@@ -5,7 +5,7 @@ import Listing from '../../components/Listing'
 import './Home.css';
 
 export default function Home() {
-  const dataUrl = 'http://localhost:3001/api';
+  const dataUrl = 'https://react-apartment-listing.herokuapp.com/api';
   const { data, isPending, error } = useFetch(dataUrl);
 
   return (

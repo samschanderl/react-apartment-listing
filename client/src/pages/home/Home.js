@@ -5,7 +5,7 @@ import Listing from '../../components/Listing'
 import './Home.css';
 
 export default function Home() {
-  const dataUrl = 'http://localhost:3001/api';
+  const dataUrl = 'https://react-apartment-listing.herokuapp.com/api';
   const { data, isPending, error } = useFetch(dataUrl);
 
   return (
@@ -13,7 +13,7 @@ export default function Home() {
       <h1>Find Your Perfect Home</h1>
       {error && <p className="error">{error}</p>}
       {isPending && <p className="loading">Loading...</p>}
-      {data && data.listings.map(listing => (
+      {data && data.map(listing => (
         <Listing key={listing.id} listing={listing}/>
       ))}
     </div>

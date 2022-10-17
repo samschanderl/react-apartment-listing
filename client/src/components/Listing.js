@@ -1,13 +1,20 @@
 import React from 'react'
-// import { AccessAlarm, ThreeDRotation } from '@mui/icons-material';
+import { Link, useHistory } from 'react-router-dom';
 
 
 // styles
 import './Listing.css'
 
 export default function Listing({listing}) {
+
+  const history = useHistory()
+
+  const openListing = (listingId) => {
+    history.push(`/listings/${listingId}`)
+  }
+
   return (
-    <div className="listing-wrapper">
+    <div className="listing-wrapper" onClick={() => {openListing(listing.id)}}>
       <p className="pricing-tag">{listing.price}</p>
       <div className="filters">
       <div className="listing-card">
@@ -23,8 +30,6 @@ export default function Listing({listing}) {
                 <span key={item} className="pill">{item}</span>
             ))}
             </div>
-
-
         </div>
       </div>
       </div>

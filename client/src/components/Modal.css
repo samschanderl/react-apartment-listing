@@ -1,0 +1,50 @@
+.modal-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(100,100,100, .9);    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.modal-box {
+    width: 75%;
+    display: grid;
+}
+
+.modal-box form {
+    display: flex;
+    flex-direction: row;
+    padding: 25px;
+    position: relative;
+}
+
+.modal-box form h2, h3 {
+    text-align: center;
+}
+
+.modal-box form h2 {
+    margin-bottom: 40px;
+}
+
+.closeModalBtn {
+    position: absolute;
+    right: 0;
+    top: 0; 
+    background: white;
+    color: var(--primary);
+    padding: 10px;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    transform: translateX(25%) translateY(-25%)
+}
+
+.closeModalBtn:hover {
+    cursor: pointer;
+} 

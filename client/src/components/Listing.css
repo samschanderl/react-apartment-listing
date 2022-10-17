@@ -105,22 +105,6 @@
     padding: 25px;
     background: var(--primary);
     color: var(--light);
-    padding: auto;
-    white-space: none;
-}
-
-.listing-card .pills {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.listing-card .pill {
-    margin-right: 10px;
-    margin-bottom: 20px;
-    background: var(--secondary);
-    padding: 5px 15px;
-    border-radius: 20px;
-    white-space: none;
 }
 
 @media all and (max-width: 1200px) {

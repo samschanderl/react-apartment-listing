@@ -26,9 +26,17 @@
     margin-right: auto;
 }
 
+.navbar .brand::before {
+    content: "";
+    z-index: 50;
+    left: 0;
+    background: var(--light);
+    width: 100px;
+    height: 5px;
+}
+
 .navbar a:last-child {
     border: 1px solid var(--light);
-    border-radius: 5px;
     padding: 10px;
     margin: 0px 25px;
 }
